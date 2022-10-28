@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Agregar2";
+}
+
+<h2>Agregar2</h2>
+
+@Html.Display("Trabajador")
+<br />
+<hr />
+@Html.Editor("Trabajador")
+
+@{
+    var lista = new List<SelectListItem>()
+    {
+          
+                new SelectListItem()
+                {
+                    Text="si",
+                    Value="1"
+                },
+                new SelectListItem()
+                {
+                    Text="no",
+                    Value="2"
+                }
+
+            };
+}
+<br />
+@Html.DropDownList("Mi lista", lista)

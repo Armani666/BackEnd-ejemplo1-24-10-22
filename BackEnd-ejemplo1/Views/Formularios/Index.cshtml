@@ -1,0 +1,60 @@
+﻿@model BackEnd_ejemplo1.Models.Trabajador
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.Nombre,
+               new { HtmlAtribute = new { @class = "for-control" } })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Apellidos, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.Apellidos,
+               new { HtmlAtribute = new { @class = "for-control" } })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.FechaNacimiento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.FechaNacimiento,
+               new { HtmlAtribute = new { @class = "for-control" } })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Sueldo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.Sueldo,
+               new { HtmlAtribute = new { @class = "for-control" } })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.EsFijo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.EsFijo,
+               new { HtmlAtribute = new { @class = "for-control" } })
+            </div>
+        </div>
+    </div>
+}

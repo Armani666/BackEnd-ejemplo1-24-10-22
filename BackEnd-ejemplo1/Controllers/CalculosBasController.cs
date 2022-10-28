@@ -51,10 +51,14 @@ namespace BackEnd_ejemplo1.Controllers
             return View(model);
         }
 
-        public ActionResult temporal() 
+        public ActionResult temporal()
         {
             //var alumno1 = new Alumno() { Nombre = "Juan", Edad = 23 };
-            //return Json(alumno1, JsonRequestBehavior.AllowGet);     //Content("<h1> hola Mundo </h1>");           return Redirect("https://google.com.mx");
+            //return Json(alumno1, JsonRequestBehavior.AllowGet);   
+            //Content("<h1> hola Mundo </h1>");
+            //return Redirect("https://google.com.mx");
+            return View();
+            
         }
 
         public RedirectToRouteResult temporal2() 

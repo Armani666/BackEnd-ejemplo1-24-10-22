@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\BackEnd-ejemplo1",
-    "\\BackEnd-ejemplo1\\Controllers"
+    "\\BackEnd-ejemplo1\\Controllers",
+    "\\BackEnd-ejemplo1\\Views"
   ],
-  "SelectedNode": "\\BackEnd-ejemplo1\\BackEnd-ejemplo1.csproj",
+  "SelectedNode": "\\BackEnd-ejemplo1\\Controllers",
   "PreviewInSolutionExplorer": false
 }

@@ -15,7 +15,7 @@ namespace BackEnd_ejemplo1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page. Asi es men es el de 1003";
+            ViewBag.Message = "Your application description page.1003";
             ViewBag.Tem = "PWA";
 
             return View();
